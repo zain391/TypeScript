@@ -1,12 +1,17 @@
 // console.log("i am zain");
 
-function muneeb2(person, date) {
+function muneeb3(person, date) {
     console.log("Hello " + person + ", today is " + date.toDateString())
    }
-   muneeb2("Maddison", new Date());
+   muneeb3("Maddison", new Date());
 
-   function greet34(person, date) {
+   function greet35(person, date) {
     console.log(`Hello ${person}, today is ${date.toDateString()}!`);
    }
-   greet34("Maddison", new Date());
+   greet35("Maddison", new Date());
+   const  name1s:string ="zain qamar";
+
+
+
+
    
