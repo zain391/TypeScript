@@ -1,6 +1,5 @@
 // console.log("i am zain");
-function muneeb(person, date) {
-    console.log("Hello " + person + ", today is " + date.toDateString() +
-    );
+function muneeb2(person, date) {
+    console.log("Hello " + person + ", today is " + date.toDateString());
 }
-muneeb("Maddison", new Date());
+muneeb2("Maddison", new Date());
