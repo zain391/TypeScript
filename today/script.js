@@ -32,25 +32,14 @@ else{
     console.log("wrong password")
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let password=prompt("enter password");
-// function showvalue(){
-//     console.log("you are Owner");
-// }
+function on(){
+    console.log("light is on");
+}
+function off(){
+    console.log("light is off");
+}
+off();
+on();
 
 
 
