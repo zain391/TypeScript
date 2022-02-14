@@ -40,10 +40,3 @@ function off(){
 }
 off();
 on();
-
-
-
-
-
-
-
