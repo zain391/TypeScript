@@ -12,3 +12,49 @@
 // let friend5=prompt("enter the name  5th of your best freind");
 // let arr=[friend1,friend2,friend3,friend4,friend5];
 // console.log(arr);
+
+// let enemy=["rashid","sardar","glsl"];
+// console.log(enemy[1],enemy[2]);
+// document.write(enemy[1],"<br>",enemy[2]);
+// console.log(enemy);
+// document.write(enemy)
+// for(let hathMarna=0; hathMarna<10;hathMarna++){
+//     console.log("mobile chulya jay");
+// }
+// for(let i=0;i<enemy.length;i++){
+//     console.log(enemy[i])
+// }
+let passwordd="786.password";
+if(passwordd == "786.password"){
+    console.log("you have access to opne this pc")
+}
+else{
+    console.log("wrong password")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let password=prompt("enter password");
+// function showvalue(){
+//     console.log("you are Owner");
+// }
+
+
+
+
+
+
+
