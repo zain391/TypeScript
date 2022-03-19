@@ -13,10 +13,10 @@ console.log(str1);
 // let alert2:string=alert("i am an alert");
 
 // now we will learn about the functions in the js 
-function name1(name){
+function name1(name:string){
     console.log("name");   
 }
-name1();
+name1("zain");
 
 
 
