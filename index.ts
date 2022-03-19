@@ -13,11 +13,12 @@ console.log(str1);
 // let alert2:string=alert("i am an alert");
 
 // now we will learn about the functions in the js 
-function name1(name:string,age:number){
+function name1(name:number,age:string){
     console.log(`i am ${name} i am ${age} year old`);
+    console.log(`i am`+name+age);
     
 }
-name1("zain",20);
+name1(20,"zain");
 
 
 
