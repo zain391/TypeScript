@@ -8,4 +8,6 @@ console.log(num1);
 const str1:string="i am a string and also have data type string";
 console.log(str1);
 alert("i am an alert");
+let alert1:string=alert("i am an alert");
+let alert2=alert("i am an alert");
 
