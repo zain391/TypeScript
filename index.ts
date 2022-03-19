@@ -18,7 +18,7 @@ function name1(name:number,age:string){
     console.log(`i am`+name+age);
     
 }
-name1(20,"zain");
+name1(20,"20");
 
 
 

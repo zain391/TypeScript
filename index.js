@@ -15,4 +15,4 @@ function name1(name, age) {
     console.log("i am ".concat(name, " i am ").concat(age, " year old"));
     console.log("i am" + name + age);
 }
-name1(20, "zain");
+name1(20, "20");
