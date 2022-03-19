@@ -5,5 +5,8 @@ console.log(typeof(num));
 const num1:number=45.56;
 console.log(typeof(num));
 console.log(num1);
+const str1:string="i am a string and also have data type string";
+console.log(str1);
+
 
 
