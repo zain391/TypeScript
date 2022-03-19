@@ -11,7 +11,7 @@ console.log(str1);
 // let alert1:string=alert("i am an alert");
 // let alert2:string=alert("i am an alert");
 // now we will learn about the functions in the js 
-function name1(name) {
-    console.log("name");
+function name1(name, age) {
+    console.log("i am ".concat(name, " i am ").concat(age, " year old"));
 }
-name1("zain");
+name1("zain", 20);
