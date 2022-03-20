@@ -42,8 +42,16 @@
 
 
 // now we are going to play with arrays in typescript
-let arr:string[]=['zain','usama','omer','Ali','Hassan'];
+var arr = ['zain', 'usama', 'omer', 'Ali', 'Hassan'];
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === 'usama') {
+        console.log("i am here",i);
+        arr.splice(i,i);
+
+    }
+}
 console.log(arr);
+
 
 
 
