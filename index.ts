@@ -19,6 +19,43 @@ function name1(name:number,age:string){
     
 }
 // name1(20,"20");
+// working with unions
+function cars(name:string,price:number,varified:boolean){
+
+}
+cars('honda',10000,true);
+// the line below will give an error cuz of data type if we want a variable to have
+// more than one data type then we use the union 
+// cars('honda',"10000",true);
+function cars2(name:string,price:number|string,varified:boolean){
+    console.log(typeof(price));
+    
+}
+cars2('honda','10000',true);
+console.log(typeof(cars2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // now we will work on objects
 // in typescript we create objects in three ways
 interface Obj{
