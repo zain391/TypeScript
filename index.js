@@ -15,6 +15,19 @@ function name1(name, age) {
     console.log("i am ".concat(name, " i am ").concat(age, " year old"));
     console.log("i am" + name + age);
 }
+// name1(20,"20");
+// working with unions
+function cars(name, price, varified) {
+}
+cars('honda', 10000, true);
+// the line below will give an error cuz of data type if we want a variable to have
+// more than one data type then we use the union 
+// cars('honda',"10000",true);
+function cars2(name, price, varified) {
+    console.log(typeof (price));
+}
+cars2('honda', '10000', true);
+console.log(typeof (cars2));
 var myObj = {
     name: 'zain',
     age: 20,
