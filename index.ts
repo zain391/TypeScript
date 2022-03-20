@@ -18,7 +18,15 @@ function name1(name:number,age:string){
     console.log(`i am`+name+age);
     
 }
-name1(20,"20");
+// name1(20,"20");
+// now we will work on objects
+let myObj={
+    name:'zain',
+    age:20,
+    height:5.10
+}
+
+console.log("this is how we create an object in js",myObj);
 
 
 
