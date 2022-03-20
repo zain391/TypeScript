@@ -38,4 +38,14 @@
 // let num=Math.random()*6;
 // console.log(Math.ceil(num));
 // now we are going to play with arrays in typescript
-
+var arr = ['zain', 'usama', 'omer', 'Ali', 'Hassan'];
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === 'usama') {
+        console.log("i am here", i);
+        arr.splice(i, i);
+    }
+}
+console.log(arr);
+// converting array to string
+var arr2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(arr2.toString());
