@@ -42,29 +42,6 @@ function cars2(name:string,price:number|string,varified:boolean){
 cars2('honda',"10000",true);
 cars2('honda',10000,true);
 console.log(typeof(cars2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // now we will work on objects
 // in typescript we create objects in three ways
 interface Obj{
