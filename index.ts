@@ -12,6 +12,7 @@ myth, the essential notion that the good gray wizard can understand the evil mag
 because he is just enough like them to grasp their minds and motives in ways that they cannot
 grasp his.
 `;
+console.log(text.indexOf("World"));
 console.log(text);
 for(let i:number=0; i<text.length; i++){
     if(text.slice(i,i+12)=='World War II'){
@@ -19,3 +20,19 @@ for(let i:number=0; i<text.length; i++){
     }
 }
 console.log(text);
+console.log(text.indexOf("World"));
+console.log(text.charAt(9));
+// the js provides more efficient way to find an d replace the string segment 
+// by using the replace function and also by using the regular expressions
+let text2:string=`It is startling to think that, even in the darkest depths of World War II, J. R. R. Tolkien was
+writing the trilogy, which contains, with the weird applicability available only to poetry and
+myth, the essential notion that the good gray wizard can understand the evil magi precisely
+because he is just enough like them to grasp their minds and motives in ways that they cannot
+grasp his.
+`;
+text2=text2.replace('World War II','the second world war');
+console.log(text2);
+
+text2=text2.replace(/'World War II'/g,'the second world war');
+console.log(`i am here cuz of regular expressions `,text2);
+
