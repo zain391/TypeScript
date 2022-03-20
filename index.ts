@@ -36,8 +36,14 @@
 // text2=text2.replace(/'World War II'/g,'the second world war');
 // console.log(`i am here cuz of regular expressions `,text2);
 
-console.log(Math.random());
-let num=Math.random()*6;
-console.log(Math.ceil(num));
+// console.log(Math.random());
+// let num=Math.random()*6;
+// console.log(Math.ceil(num));
+
+
+// now we are going to play with arrays in typescript
+let arr:string[]=['zain','usama','omer','Ali','Hassan'];
+console.log(arr);
+
 
 
