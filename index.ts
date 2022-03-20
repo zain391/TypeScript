@@ -13,6 +13,10 @@ function display(d:Date){
     
 }
 display(new Date());
+let dd:Date=new Date();
+let required:Date=new Date("january 21, 2025");
+console.log(dd);
+console.log(required);
+console.log(typeof(required));
 
-
-
+// let milSec:Number=(required-dd);

@@ -12,3 +12,9 @@ function display(d) {
     console.log("getMilliseconds", d.getMilliseconds());
 }
 display(new Date());
+var dd = new Date();
+var required = new Date("january 21, 2025");
+console.log(dd);
+console.log(required);
+console.log(typeof (required));
+// let milSec:Number=(required-dd);
