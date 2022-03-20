@@ -1,11 +1,3 @@
-var dd = new Date();
-var required = new Date("january 21, 2025");
-var dd2 = dd.getTime();
-var dd3 = required.getTime();
-var milSec = dd3 - dd2;
-var diff = milSec / (1000);
-diff = Math.ceil(diff);
-console.log(diff);
-// let milSec:Number=(required-dd);
-let para=document.getElementById("para");
-para.innerHTML=diff;
+var dry = new Date();
+var year = dry.setFullYear(2018);
+console.log(dry);
