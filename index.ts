@@ -4,3 +4,4 @@
 let cityName=prompt("Enter the name of ciyt Starting with Letter D");
 console.log(cityName);
 console.log(cityName.slice(1,1));
+console.log(cityName.slice(1));
