@@ -30,7 +30,13 @@ cars('honda',10000,true);
 function cars2(name:string,price:number|string,varified:boolean){
     console.log(typeof(price));
     console.log(name.toUpperCase());
-    // console.log(price.toUpperCase());
+    //  narrow the union with code
+    if(typeof(price)=='string'){
+        console.log(price.toUpperCase());
+    }else{
+        console.log(price);
+
+    }
     
 }
 cars2('honda',"10000",true);
