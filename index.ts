@@ -20,7 +20,13 @@ function name1(name:number,age:string){
 }
 // name1(20,"20");
 // now we will work on objects
-let myObj={
+// in typescript we create objects in three ways
+interface Obj{
+    name:string,
+    age:number,
+    height:number
+}
+let myObj:Obj={
     name:'zain',
     age:20,
     height:5.10
