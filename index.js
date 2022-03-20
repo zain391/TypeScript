@@ -26,9 +26,16 @@ cars('honda', 10000, true);
 function cars2(name, price, varified) {
     console.log(typeof (price));
     console.log(name.toUpperCase());
-    // console.log(price.toUpperCase());
+    //  narrow the union with code
+    if (typeof (price) == 'string') {
+        console.log(price.toUpperCase());
+    }
+    else {
+        console.log("i am not a string", price);
+    }
 }
 cars2('honda', "10000", true);
+cars2('honda', 10000, true);
 console.log(typeof (cars2));
 var myObj = {
     name: 'zain',

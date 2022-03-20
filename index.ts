@@ -34,12 +34,13 @@ function cars2(name:string,price:number|string,varified:boolean){
     if(typeof(price)=='string'){
         console.log(price.toUpperCase());
     }else{
-        console.log(price);
+        console.log("i am not a string",price);
 
     }
     
 }
 cars2('honda',"10000",true);
+cars2('honda',10000,true);
 console.log(typeof(cars2));
 
 
