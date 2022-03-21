@@ -26,11 +26,14 @@ let objOne:obj={
     isMale:true,
     birthMark:null,
 }
+let text:number|string='';
 // now we are going to use the for in loop to read the values in objects
 for(let x in objOne){
+    text += objOne[x];
     console.log(objOne[x]);
-    
 }
+console.log(text);
+
 
 
 
