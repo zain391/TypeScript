@@ -3,3 +3,5 @@
 type arr=Array<string>;
 let arr1:arr=['zain'];
 let arr2:string[]=['zain'];
+console.log(arr1);
+console.log(arr2);
