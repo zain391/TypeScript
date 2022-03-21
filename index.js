@@ -1,3 +1,5 @@
-var dry = new Date();
-var year = dry.setFullYear(2018);
-console.log(dry);
+var d = new Date();
+var mySecDate2 = d.getSeconds();
+var dd = new Date('january 20,2021');
+var mySecDate1 = dd.getSeconds();
+console.log(mySecDate1 - mySecDate1);
