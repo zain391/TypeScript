@@ -203,3 +203,10 @@ for (var x in objOne) {
 console.log(text);
 var result2 = arr1.filter(function (item) { return item > 100; });
 console.log(result2);
+var x = prompt("Where does the Pope live?");
+ if (x === "Vatican") {
+ alert("Correct!");
+ }
+ if (x !== "Vatican") {
+ alert("Wrong answer");
+ }
