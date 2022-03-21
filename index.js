@@ -19,3 +19,6 @@ var result = arr1.forEach(function (arrItem) {
         return arrItem;
     }
 });
+// now we are going to do the same by using the arroe function 
+var result2 = arr1.filter(function (item) { return item > 100; });
+console.log(result2);

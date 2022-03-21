@@ -25,4 +25,10 @@ const result=arr1.forEach(function (arrItem){
         if(arrItem>100){
                 return arrItem;
         }
-})
+});
+
+// now we are going to do the same by using the arroe function 
+const result2=arr1.filter(item=>item>100);
+console.log(result2);
+
+
