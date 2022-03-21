@@ -8,3 +8,7 @@ for(let i:number=0; i<arr1.length; i++){
         console.log(arr1[i]);
 }
 // above line will do the work but we will do this byusing the foreach method
+arr1.forEach(function(arrItem){
+        console.log(arrItem);
+        
+})
