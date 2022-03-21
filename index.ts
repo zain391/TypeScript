@@ -12,3 +12,17 @@ arr1.forEach(function(arrItem){
         console.log(arrItem);
         
 })
+// now we only want those elements which are greater than 100
+
+for(let i:number=0; i<arr1.length; i++){
+        if(arr1[i]>100){
+                console.log(arr1[i]);
+                
+        }        
+}
+// now we will do this by using the fillter 
+const result=arr1.forEach(function (arrItem){
+        if(arrItem>100){
+                return arrItem;
+        }
+})
