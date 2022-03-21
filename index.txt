@@ -201,3 +201,5 @@ for (var x in objOne) {
     console.log(objOne[x]);
 }
 console.log(text);
+var result2 = arr1.filter(function (item) { return item > 100; });
+console.log(result2);
