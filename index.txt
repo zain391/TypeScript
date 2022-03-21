@@ -114,3 +114,18 @@ if (strAge >= 20) {
 else {
     console.log("you are not hulk because you are not a teen");
 }
+
+// now we are going to do this by using the logical operators
+if(strAge>20 && color=='green' && strHei>5.10){
+    console.log("you are hulk ");
+}else{
+    console.log("you are not hulk "); 
+}
+// if else are used for a range 
+// switch statements are used for a specific statements
+switch(color){
+    case "green":console.log("you are green in color");  
+    case 'red':console.log("you are red in color");
+    default:console.log('you are human');
+        
+}
