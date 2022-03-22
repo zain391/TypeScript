@@ -9,23 +9,29 @@ for(let i:number=0; i<arr1.length; i++){
 }
 // above line will do the work but we will do this byusing the foreach method
 arr1.forEach(function(arrItem){
-        console.log(arrItem);
+        if(arrItem>100){
+                console.log("i am foreach loop",arrItem);
+                
+        }
         
 })
 // now we only want those elements which are greater than 100
 
 for(let i:number=0; i<arr1.length; i++){
         if(arr1[i]>100){
-                console.log(arr1[i]);
+                console.log("for loop for for each loop ",arr1[i]);
                 
         }        
 }
 // now we will do this by using the fillter 
-const result=arr1.forEach(function (arrItem){
+const result=arr1.filter(function (arrItem){
         if(arrItem>100){
+                console.log('i am filter loop because i can return something');
+                
                 return arrItem;
         }
 });
+console.log(result);
 
 // now we are going to do the same by using the arroe function 
 const result2=arr1.filter(item=>item>100);
