@@ -226,3 +226,24 @@ var arrOfNum = [34, 5, 6, 7, 87, 87, 98, 89, 67, 83, 45, 54];
 var result2 = arrOfNum.map(function (item) { return console.log(item); });
 var result3 = arrOfNum.map(function (item) { return Math.sqrt(item); }).map(function (item) { return item * 34; });
 // so in this way we can use map multiple times so map is a powerfull tool 
+
+let objPlan2={
+    name:'proffesional',
+    price:20,
+    space:500,
+    transfer:500,
+    pages:10,
+    discountMonths:'Jul,Aug,Dec',
+}
+function calcAnnual() {
+    var bestPrice = objPlan2.price;
+    var currDate = new Date();
+    var thisMo = currDate.getMonth();
+    for (var i = 0; i < objPlan2.discountMonths.length; i++) {
+    if (objPlan2.discountMonths[i] === thisMo) {
+    bestPrice = objPlan2.price * .8;
+    break;
+    }
+    }
+    return bestPrice * 12;
+    }
