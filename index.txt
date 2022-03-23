@@ -32,3 +32,26 @@ function validateZIP() {
         }
     }
 }
+function validateZIP2() {
+    var num = 45;
+    var numChars = document.getElementById("zip").value.length;
+    if (numChars < 5) {
+        alert("Please enter a 5-digit code or die .");
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+function validateRadios() {
+    var radios = document.getElementsByName("r1");
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            var val = true;
+            return val;
+        }
+    }
+    alert("Please check one.");
+    var val2 = false;
+    return val2;
+}

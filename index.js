@@ -1,27 +1,12 @@
-// just making unwanted commit
-function validateZIP() {
-    var valueEntered = document.getElementById("zip").value;
-    var numChars = valueEntered.length;
-    if (numChars < 5) {
-        alert("Please enter a 5-digit code.");
-        return false;
-    }
-    for (var i = 0; i <= 4; i++) {
-        var thisChar = parseInt(valueEntered[i]);
-        if (isNaN(thisChar)) {
-            alert("Please enter only numbers.");
-            return false;
+function validateRadios() {
+    var radios = document.getElementsByName("r1");
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            var val = true;
+            return val;
         }
     }
-}
-function validateZIP2() {
-    var num = 45;
-    var numChars = document.getElementById("zip").value.length;
-    if (numChars < 5) {
-        alert("Please enter a 5-digit code or die .");
-        return false;
-    }
-    else {
-        return true;
-    }
+    alert("Please check one.");
+    var val2 = false;
+    return val2;
 }
