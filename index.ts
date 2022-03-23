@@ -1,27 +1,12 @@
-// now we are going to learn about the objects in the ts
-// MERN MEAN MEVN
-interface obj{
-    name:string,
-    price:number,
-    space:number,
-    transfer:number,
-    pages:number,
-    discountMonths:string,
+// now we are going to learn about the exceptaion handling 
+// If you run the following code, nothing will happen
+function greetFun(){
+    const mesg="Hello wrold";
+    alert(mesg);
 }
-let objPlan:obj={
-    name:'basic',
-    price:10,
-    space:10,
-    transfer:200,
-    pages:7,
-    discountMonths:'Jul,Aug',
+function greetWord(){
+    try{
+        const mesg="Hello world";
+        alert(mesg);
+    }
 }
-let objPlan2:obj={
-    name:'proffesional',
-    price:20,
-    space:500,
-    transfer:500,
-    pages:10,
-    discountMonths:'Jul,Aug,Dec',
-}
-// we can also add the new properties in the object
