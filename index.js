@@ -1,12 +1,9 @@
-function validateRadios() {
-    var radios = document.getElementsByName("r1");
-    for (var i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            var val = true;
-            return val;
-        }
+function checkForSelection(selecID) {
+    var target = document.getElementById(selecID);
+    var num = 0;
+    if (target.selectedIndex === num) {
+        alert("Please select a state.");
+        var random = false;
+        return random;
     }
-    alert("Please check one.");
-    var val2 = false;
-    return val2;
 }
