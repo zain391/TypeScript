@@ -1,5 +1,5 @@
 // now we are going to learn about the objects in the ts
-// MERN MEAN MEVN 
+// MERN MEAN MEVN
 interface obj{
     name:string,
     price:number,
@@ -24,5 +24,4 @@ let objPlan2:obj={
     pages:10,
     discountMonths:'Jul,Aug,Dec',
 }
-// we can also add the new properties in the object 
-objPlan2.random="random";
+// we can also add the new properties in the object
