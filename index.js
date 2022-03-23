@@ -1,35 +1,17 @@
-// now we are going to study objects in details
-var myself = {
-    name: 'zain',
-    age: 30
-};
-function greet(person) {
-    console.log(typeof person);
+const province={
+    howMany:4,
+    first:'Punjab',
+    second:'KPK',
+    third:'Sindh',
+    forth:"Blachistan",
+    // now we are going to create a methof of the objec
+    readFirstPro:function (){
+        name1=this.first;
+        console.log("i am name1=this.first; " ,name1);
+    }
 }
-greet(myself);
-// now as we have created the interface for the object we can use it 
-function greet2(person1) {
-    return person1.name;
-}
-var myself2 = {
-    name: 'zain2',
-    age: 20
-};
-greet2(myself2);
-var pak1 = {
-    east: 'India'
-};
-// as we can see know the typescript is not giving us error and still we are not using all the properties of the object 
-var pak2 = {
-    nortwest: 'Afghanistan'
-};
-// now we can see that we did not add the ? with tht east so the typescript is gu=iving us the error that we have to use it 
-var pak3 = {
-    east: 'India',
-    nortwest: "Afghanistan",
-    west: 'Iran',
-    northEast: 'northEast'
-};
-console.log(pak1);
-console.log(pak2);
-console.log(pak3);
+console.log('1',province);
+// the line below will give us the function definition but not the result  
+console.log('2',province.readFirstPro);
+// now we want to only display  the readFirst value
+console.log('3',province.readFirstPro());

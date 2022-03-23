@@ -34,9 +34,11 @@ const pak1:Qusetionmark={
     east:'India'
 }
 // as we can see know the typescript is not giving us error and still we are not using all the properties of the object 
-const pak2:Qusetionmark={
-        nortwest:'Afghanistan'
-}
+
+// const pak2:Qusetionmark={
+//         nortwest:'Afghanistan'
+// }
+
 // now we can see that we did not add the ? with tht east so the typescript is gu=iving us the error that we have to use it 
 const pak3:Qusetionmark={
     east:'India',
@@ -45,5 +47,5 @@ const pak3:Qusetionmark={
     northEast:'northEast',
 }
 console.log(pak1);
-console.log(pak2);
+// console.log(pak2);
 console.log(pak3);
