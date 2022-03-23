@@ -8,5 +8,7 @@ function greetWord(){
     try{
         const mesg="Hello world";
         alert(mesg);
+    }catch(err){
+        alert(err)
     }
 }
