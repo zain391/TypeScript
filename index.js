@@ -1,33 +1,25 @@
-const pakistan={
-    howMany:4,
-    first:'Punjab',
-    second:'KPK',
-    third:'Sindh',
-    forth:"Blachistan",
-    // now we are going to create a methof of the objec
-    readFirstPro:function (){
-        name1=this.first;
-        console.log("i am name1=this.first; " ,name1);
+var plan1 = {
+    name: "Basic",
+    price: 3.99,
+    space: 100,
+    transfer: 1000,
+    pages: 10,
+    discountMonths: [2,6, 7]
+};
+// now we are going to create a method for the object an then we will emmbed it in the object for its use
+function calAnnual(){
+    let bestPrice=plan1.price;
+    const currentDate=new Date();
+    const month=currentDate.getMonth();
+    for(let i=0; i<2; i++){
+        if(plan1.discountMonths[i]==month){
+            bestPrice= plan1.price * .8;
+            console.log(bestPrice);
+        }
+        else{
+            console.log("no the current month is not in the plan so u wont get a discount");
+        }
     }
 }
-console.log('1',pakistan);
-// the line below will give us the function definition but not the result  
-console.log('2',pakistan.readFirstPro);
-// now we want to only display  the readFirst value
-console.log('3',pakistan.readFirstPro());
-// and we can also add the property in the object 
-//firs we all add the property in the object 
-pakistan.Pm='Imran Khan';
-console.log("i was not in the object ",pakistan.Pm);
-// we can also check if a property in the object exit or not
-const checkPoint='Pm' in pakistan;
-console.log("it should either be true or false ",checkPoint);
-// we can also delete the propety of the object 
-
-delete pakistan.Pm;
-console.log("i was deleted from the object ",pakistan.Pm);
-
-
-
-
-
+// this is still a function not a method of the object 
+calAnnual();
