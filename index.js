@@ -1,17 +1,16 @@
-// now we are going to learn about the exceptaion handling 
-// If you run the following code, nothing will happen
-function greetFun() {
-    var mesg = "Hello wrold";
-    alert(mesg);
-}
-function greetWord() {
-    try {
-        var mesg = "Hello world";
-        alert(mesg);
+// just making unwanted commit
+function validateZIP() {
+    var valueEntered = document.getElementById("zip").value;
+    var numChars = valueEntered.length;
+    if (numChars < 5) {
+        alert("Please enter a 5-digit code.");
+        return false;
     }
-    finally {
+    for (var i = 0; i <= 4; i++) {
+        var thisChar = parseInt(valueEntered[i]);
+        if (isNaN(thisChar)) {
+            alert("Please enter only numbers.");
+            return false;
+        }
     }
 }
-greetWord();
-greetFun()
-// now we will see the output of the functions with Exception handling and without exception handling
