@@ -14,3 +14,14 @@ function validateZIP() {
         }
     }
 }
+function validateZIP2() {
+    var num = 45;
+    var numChars = document.getElementById("zip").value.length;
+    if (numChars < 5) {
+        alert("Please enter a 5-digit code or die .");
+        return false;
+    }
+    else {
+        return true;
+    }
+}
