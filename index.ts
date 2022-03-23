@@ -24,3 +24,5 @@ let objPlan2:obj={
     pages:10,
     discountMonths:'Jul,Aug,Dec',
 }
+// we can also add the new properties in the object 
+objPlan2.random="random";
