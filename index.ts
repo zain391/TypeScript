@@ -1,13 +1,10 @@
-function validateRadios() {
-     var radios:any= document.getElementsByName("r1");
-     for (var i:number = 0; i < radios.length; i++) {
-    if (radios[i].checked) {
-        let val:boolean=true;
-     return val;
+function checkForSelection(selecID) {
+     var target:any = document.getElementById(selecID);
+     let num:number=0;
+     if (target.selectedIndex === num) {
+     alert("Please select a state.");
+     let random:boolean=false;
+     return random;
      }
-     }
-     alert("Please check one.");
-     let val2:boolean=false;
-     return val2;
      }
     
