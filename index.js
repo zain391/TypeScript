@@ -13,15 +13,15 @@ var plan1 = {
         for(let i=0; i<2; i++){
             if(plan1.discountMonths[i]==month){
                 bestPrice= plan1.price * .8;
-                console.log(bestPrice);
+                //console.log(bestPrice);
             }
             else{
-                console.log("no the current month is not in the plan so u wont get a discount");
+                //console.log("no the current month is not in the plan so u wont get a discount");
             }
         }
     }
 };
-console.log(plan1);
+//console.log(plan1);
 plan1.calAnnual();
 function ForPlans(name1,price,space,transfer,pages,discountMonths){
     // note that the first letter of the constructor is kept for Capital 
@@ -35,18 +35,18 @@ function ForPlans(name1,price,space,transfer,pages,discountMonths){
 }
 const plan01=new ForPlans('Basic01',001,00100,"10 GB",10,[2,6,7]);
 const plan02=new ForPlans('pro',002,002,"20 GB",20,[2,6,7]);
-console.log(plan01);
-console.log(plan02);
+//console.log(plan01);
+//console.log(plan02);
 // now we are going to learn about the browser model
 const whereAt=window.location.href;
-console.log(whereAt);
+//console.log(whereAt);
 // now we are going to get the domain name of the website
 const DomainName=window.location.hostname;
-console.log(DomainName);
+//console.log(DomainName);
 const path1=window.location.pathname;
-console.log(path1);
+//console.log(path1);
 const hashing=window.location.hash;
-console.log(hashing);
+//console.log(hashing);
 // window.location.href='https://www.facebook.com/';
 // now we are going to learn about the classes in the js 
 class first {
@@ -61,10 +61,10 @@ const first1=new first('zain',20);
 console.log(first);
 console.log(first1);
 import { myself } from "./module1";
-console.log(myself);
+//console.log(myself);
 import Umer from "./module2";
-console.log("i am umer imported from another modules",Umer);
+//console.log("i am umer imported from another modules",Umer);
 import message from "./module1";
-console.log(message());
+//console.log(message());
 import { JSONTry } from "./module1";
-console.log(JSONTry);
+//console.log(JSONTry);
