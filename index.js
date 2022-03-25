@@ -24,7 +24,7 @@ var plan1 = {
 console.log(plan1);
 plan1.calAnnual();
 function ForPlans(name1,price,space,transfer,pages,discountMonths){
-    // note that the first letter of the prototype is kept for Capital 
+    // note that the first letter of the constructor is kept for Capital 
     // it is just for the sake of Understading and easily finnding the constructor seprately from the normal function you can also create a portotype by using the lower case first letter 
     this.name1=name1;
     this.price=price;
@@ -37,3 +37,11 @@ const plan01=new ForPlans('Basic01',001,00100,"10 GB",10,[2,6,7]);
 const plan02=new ForPlans('pro',002,002,"20 GB",20,[2,6,7]);
 console.log(plan01);
 console.log(plan02);
+// now we are going to learn about the browser model
+const whereAt=window.location.href;
+console.log(whereAt);
+// now we are going to get the domain name of the website
+const DomainName=window.location.hostname;
+console.log(DomainName);
+const path1=window.location.path;
+console.log(path1);
