@@ -43,5 +43,20 @@ console.log(whereAt);
 // now we are going to get the domain name of the website
 const DomainName=window.location.hostname;
 console.log(DomainName);
-const path1=window.location.path;
+const path1=window.location.pathname;
 console.log(path1);
+const hashing=window.location.hash;
+console.log(hashing);
+// window.location.href='https://www.facebook.com/';
+// now we are going to learn about the classes in the js 
+class first {
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+
+    }
+}
+// we can create the objects by using both classes and the constructor functions
+const first1=new first('zain',20);
+console.log(first);
+console.log(first1);
