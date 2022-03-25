@@ -66,3 +66,5 @@ import Umer from "./module2";
 console.log("i am umer imported from another modules",Umer);
 import message from "./module1";
 console.log(message());
+import { JSONTry } from "./module1";
+console.log(JSONTry);
