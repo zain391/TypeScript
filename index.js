@@ -60,3 +60,19 @@ class first {
 const first1=new first('zain',20);
 console.log(first);
 console.log(first1);
+class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+  
+    }
+    age() {
+      let date = new Date();
+      return date.getFullYear() - this.year;
+    }
+  }
+  
+  let myCar = new Car("Ford", 2014);
+  console.log(`My car is " + myCar.age() + " years old.`);
+//   addding the methods in the classes are same as of in object 
+// you define a function inside a class ans it became the comethod of that class objects
