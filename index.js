@@ -1,3 +1,15 @@
+// const mes:string='Message';
+// async function test(){
+//     // the async function return a promise 
+//     console.log(`${2} : ${mes}`);
+//      await console.log(`${3} : ${mes}`);
+//      console.log(`${4} : ${mes}`);
+//     return "i am resolved "     
+// }
+// console.log(`${1} : ${mes}`);
+// test();
+// console.log(`${5} : ${mes}`);
+// console.log(test());
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,25 +46,32 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-console.clear();
-var mes = 'Message';
-function test() {
+function test2() {
     return __awaiter(this, void 0, void 0, function () {
+        var response, students;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     // the async function return a promise 
                     console.log("".concat(2, " : ").concat(mes));
-                    return [4 /*yield*/, console.log("".concat(3, " : ").concat(mes))];
+                    response = fetch("std.record.JSON");
+                    return [4 /*yield*/, response];
                 case 1:
+                    students = (_a.sent()).json();
+                    return [4 /*yield*/, console.log("".concat(3, " : ").concat(mes))];
+                case 2:
                     _a.sent();
                     console.log("".concat(4, " : ").concat(mes));
-                    return [2 /*return*/, "i am resolved "];
+                    return [2 /*return*/, students];
             }
         });
     });
 }
 console.log("".concat(1, " : ").concat(mes));
-test();
+test().then(function () {
+    console.log('i am resolved ');
+})["catch"](function (error) {
+    console.log(error);
+});
 console.log("".concat(5, " : ").concat(mes));
-// console.log(test());
+console.log(test2());
