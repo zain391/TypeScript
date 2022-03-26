@@ -33,6 +33,15 @@ const fun3=async function (){
     
 }
 console.log(fun3());
+// if we do not handle the reject and resolve seperatelly as we are doing now then the function will always return resolve 
+// now we are going to make this function more precises by using the js Arrow function
+const fun4=async  ()=>{
+    return 45;
+}
+console.log(fun4());
+// as we know that if we want to return a single thing in js Arrow function then we can also make the code more shorter 
+const fun5=async  ()=>60;
+console.log(fun5());
 
 
 
