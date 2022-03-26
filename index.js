@@ -2,7 +2,7 @@
 const fun1=function (){
     return new Promise(function (resolve,reject){
         setTimeout(() => {
-            const val=true;
+            const val=false;
             if(!val){
                 console.log("you have come to meet me ");
                 resolve();
@@ -19,4 +19,27 @@ fun1().then(
     }
 ).catch(function (){
     document.write("you rejected your promise now i will no longer talk to you ")
-})
+});
+
+// now we are going to learn about the async and await in the js
+// async and await are for easyly understanding and writting promises sode in the js
+// all you have to fo is to write async before a function and that particular function will become a promise (as we know that the promise accepts teo parameters functions (rject and resolve so in aysnc we also deal with reject and resolve)).
+const fun2=function (){
+    return 34;
+}
+console.log(fun2());
+// the above function is a normal function 
+const fun3=async function (){
+    
+}
+console.log(fun3());
+
+
+
+
+
+
+
+
+
+
