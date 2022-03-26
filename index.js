@@ -42,6 +42,39 @@ console.log(fun4());
 // as we know that if we want to return a single thing in js Arrow function then we can also make the code more shorter 
 const fun5=async  ()=>60;
 console.log(fun5());
+// now we are going to add the .then for promise resolvation 
+console.clear();
+const fun6=async  ()=>60;
+fun6().then(function (val){
+    console.log('i am .then console');
+    return val;
+});
+console.log(fun6());
+// now we are going to use the arrow function 
+const fun7=async  ()=>60;
+fun6().then((val)=>{
+    console.log('i am .then console');
+    return val;
+});
+console.log(fun7());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
